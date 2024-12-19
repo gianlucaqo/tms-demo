@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Pianificare la riunione settimanale",
+    "description": "Organizzare la riunione con il team per discutere i progressi.",
+    "state": "To Do",
+    "dueDate": "2024-12-20T09:00:00",
+    "assignedTo": "Giulia Rossi",
+    "priority": 3,
+    "createdAt": "2024-12-15T10:30:00",
+    "updatedAt": "2024-12-15T10:30:00"
+  },
+  {
+    "id": 4,
+    "title": "Analizzare i dati delle vendite",
+    "description": "Creare un report dettagliato delle vendite del Q4.",
+    "state": "To Do",
+    "dueDate": "2024-12-25T12:00:00",
+    "assignedTo": "Elena Neri",
+    "priority": 3,
+    "createdAt": "2024-12-15T11:45:00",
+    "updatedAt": "2024-12-15T11:45:00"
+  },
+  {
+    "id": 6,
+    "title": "Preparare la presentazione per il cliente",
+    "description": "Creare le slide per l'incontro del 23 dicembre.",
+    "state": "To Do",
+    "dueDate": "2024-12-22T09:00:00",
+    "assignedTo": "Anna Conti",
+    "priority": 2,
+    "createdAt": "2024-12-14T09:30:00",
+    "updatedAt": "2024-12-14T09:30:00"
+  }
+]

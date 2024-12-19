@@ -1,0 +1,7 @@
+@if (taskList) {
+  @for (task of taskList; track task.){
+    <app-task-card [task]="task"></app-task-card>
+  }
+} @else {
+
+}

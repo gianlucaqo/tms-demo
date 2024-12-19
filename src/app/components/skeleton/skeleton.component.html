@@ -1,0 +1,46 @@
+<div class="skeleton-body">
+  <div class="drag-drop-container">
+    <h2>{{ Status.TODO }}</h2>
+    <div class="task-list">
+      @for (item of Array(3).fill(1); track item) {
+        <ngx-skeleton-loader count="1" appearance="circle"
+                             [theme]="{
+      'border-radius': '5px',
+      height: '200px',
+      width:'200px',
+      border: '1px solid white'
+    }"/>
+      }
+    </div>
+  </div>
+
+  <div class="drag-drop-container">
+    <h2>{{ Status.INPROGRESS }}</h2>
+    <div class="task-list">
+      @for (item of Array(3).fill(1); track item) {
+        <ngx-skeleton-loader count="1" appearance="circle"
+                             [theme]="{
+      'border-radius': '5px',
+      height: '200px',
+      width:'200px',
+      border: '1px solid white'
+    }"/>
+      }
+    </div>
+  </div>
+
+  <div class="drag-drop-container">
+    <h2>{{ Status.DONE }}</h2>
+    <div class="task-list">
+      @for (item of Array(3).fill(1); track item) {
+        <ngx-skeleton-loader count="1" appearance="circle"
+                             [theme]="{
+      'border-radius': '5px',
+      height: '200px',
+      width:'200px',
+      border: '1px solid white'
+    }"/>
+      }
+    </div>
+  </div>
+</div>

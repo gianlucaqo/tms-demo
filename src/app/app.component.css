@@ -1,0 +1,70 @@
+.drag-drop-container{
+  height: 100%;
+  width: 400px;
+  max-width: 100%;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+  & .task-list {
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvh;
+  }
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+  0 8px 10px 1px rgba(0, 0, 0, 0.14),
+  0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.task-list.cdk-drop-list-dragging{
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.dashboard-body{
+  background-color: #FFF9F4;
+  display: flex;
+  justify-content: center;
+}
+app-skeleton{
+  height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+  .drag-drop-container {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  .dashboard-body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .drag-drop-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .task-list {
+    gap: 10px;
+  }
+}

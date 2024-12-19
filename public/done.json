@@ -1,0 +1,24 @@
+[
+  {
+    "id": 3,
+    "title": "Aggiornare il sito web aziendale",
+    "description": "Inserire le ultime novità nella sezione news del sito.",
+    "state": "Done",
+    "dueDate": "2024-12-10T12:00:00",
+    "assignedTo": "Luca Verdi",
+    "priority": 1,
+    "createdAt": "2024-12-01T08:30:00",
+    "updatedAt": "2024-12-10T12:00:00"
+  },
+  {
+    "id": 8,
+    "title": "Inviare gli auguri natalizi ai clienti",
+    "description": "Preparare e inviare le email augurali a tutti i contatti.",
+    "state": "Done",
+    "dueDate": "2024-12-15T18:00:00",
+    "assignedTo": "Maria Farina",
+    "priority": 1,
+    "createdAt": "2024-12-01T14:00:00",
+    "updatedAt": "2024-12-15T18:00:00"
+  }
+]

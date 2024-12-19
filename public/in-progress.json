@@ -1,0 +1,35 @@
+[
+  {
+    "id": 2,
+    "title": "Scrivere la documentazione tecnica",
+    "description": "Completare la documentazione del progetto XYZ.",
+    "state": "In Progress",
+    "dueDate": "2024-12-22T18:00:00",
+    "assignedTo": "Marco Bianchi",
+    "priority": 2,
+    "createdAt": "2024-12-14T14:00:00",
+    "updatedAt": "2024-12-16T16:00:00"
+  },
+  {
+    "id": 5,
+    "title": "Testare il nuovo sistema di login",
+    "description": "Eseguire test funzionali e di sicurezza.",
+    "state": "In Progress",
+    "dueDate": "2024-12-21T17:00:00",
+    "assignedTo": "Davide Russo",
+    "priority": 3,
+    "createdAt": "2024-12-12T15:00:00",
+    "updatedAt": "2024-12-16T09:00:00"
+  },
+  {
+    "id": 7,
+    "title": "Correggere i bug del modulo di pagamento",
+    "description": "Risolvere i problemi segnalati dagli utenti.",
+    "state": "In Progress",
+    "dueDate": "2024-12-19T16:00:00",
+    "assignedTo": "Simone Galli",
+    "priority": 3,
+    "createdAt": "2024-12-13T10:15:00",
+    "updatedAt": "2024-12-15T12:00:00"
+  }
+]

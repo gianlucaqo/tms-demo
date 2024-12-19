@@ -1,0 +1,42 @@
+.task-card {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.mat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-icon {
+  margin-left: auto;
+  border-radius: 15px;
+}
+.delete-btn:hover {
+  color: red;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.edit-btn:hover {
+  color: #2196F3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+mat-card-header{
+  justify-content: space-between;
+}
+mat-card-footer{
+  display: flex;
+  padding-right: 16px;
+  padding-left: 16px;
+  align-items: center;
+}

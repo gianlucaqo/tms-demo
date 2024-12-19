@@ -1,0 +1,82 @@
+
+  <form [formGroup]="taskForm" (ngSubmit)="onSubmit()"  class="task-form-container">
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" required />
+      @if(taskForm.get('title')?.invalid && taskForm.get('title')?.touched){
+        <mat-error>
+          Title is required
+        </mat-error>
+      }
+
+
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" required></textarea>
+      @if(taskForm.get('description')?.invalid && taskForm.get('description')?.touched){
+        <mat-error>
+          Description is required
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>State</mat-label>
+      <mat-select formControlName="state" required >
+        @for(status of statusOptions;track status){
+          <mat-option [value]="status">{{ status }}</mat-option>
+        }
+
+      </mat-select>
+      @if(taskForm.get('state')?.invalid && taskForm.get('state')?.touched){
+        <mat-error>
+          Status is required
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Scegli una data</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dueDate" required>
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      @if(taskForm.get('dueDate')?.invalid && taskForm.get('dueDate')?.touched){
+        <mat-error>
+          Date is required
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Assigned To</mat-label>
+      <input matInput formControlName="assignedTo" required />
+      @if(taskForm.get('assignedTo')?.invalid && taskForm.get('assignedTo')?.touched){
+        <mat-error>
+          Assigned To is required
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Priority</mat-label>
+      <mat-select formControlName="priority" required>
+        @for(priority of priorityOptions;track priority){
+          <mat-option [value]="priority">{{ getPriority(priority) }}</mat-option>
+        }
+      </mat-select>
+      @if(taskForm.get('priority')?.invalid && taskForm.get('priority')?.touched){
+        <mat-error>
+          Priority is required
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <div class="form-actions">
+      <button mat-raised-button color="primary" type="submit" [disabled]="taskForm.invalid">{{submitLabel}}</button>
+    </div>
+  </form>
+

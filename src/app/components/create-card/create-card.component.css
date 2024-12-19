@@ -1,0 +1,10 @@
+.create-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+mat-icon{
+  width: auto;
+  height: auto;
+  font-size: 30px;
+}

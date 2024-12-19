@@ -1,0 +1,18 @@
+<mat-card class="task-card" appearance="outlined">
+  <mat-card-header>
+    <div class="header-content">
+      <mat-card-title>{{ task.title }}</mat-card-title>
+      <mat-card-subtitle>Stato: {{ task.state }}</mat-card-subtitle>
+    </div>
+    <mat-icon class="delete-btn" aria-hidden="false" aria-label="Add task" fontIcon="close" (click)="deleteTask(task)"></mat-icon>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ task.description }}</p>
+    <p><strong>Priorità:</strong> {{ getPriority(task.priority)}}</p>
+    <p><strong>Assegnato a:</strong> {{ task.assignedTo }}</p>
+  </mat-card-content>
+  <mat-card-footer>
+    <p><small>Scadenza: {{ task.dueDate | date:'mediumDate' }}</small></p>
+    <mat-icon class="edit-btn" aria-hidden="false" aria-label="Add task" fontIcon="edit" (click)="edit(task)"></mat-icon>
+  </mat-card-footer>
+</mat-card>
